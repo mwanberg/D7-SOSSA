@@ -1,3 +1,5 @@
+/* @override http://d7-sossa.localhost/sites/all/themes/sossa_omega/css/global.css?lvp2y7 */
+
 /* This file will hold the main styles for your website. */
 
 /*
@@ -178,6 +180,15 @@ h6.site-slogan {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#52bad8',GradientType=0 ); /* IE6-9 */
 }
 
+
+/* Postscript */
+
+.zone-postscript {
+  border-top: 1px solid #e6e6e6;
+  padding: 2em 0 0 0;
+}
+
+
 /* Footer menu */
 
 .block-menu-footer-menu .block-title {
@@ -207,6 +218,23 @@ h6.site-slogan {
   margin: 1em 0 0 0;
   padding: 1em 0 0 0;
   text-align: center;
+}
+
+
+/*
+ * Specific sections and pages
+ */
+
+/* About page */
+
+.context-about .region-content-inner {
+  background-color: #e1f3f8;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  margin: 0 0 2em 0;
+  padding: 1em 1.5em;
 }
 
 
