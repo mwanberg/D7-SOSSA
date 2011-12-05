@@ -1,1 +1,251 @@
 /* This file will hold the main styles for your website. */
+
+/*
+ * General
+ */
+
+/* Typography */
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+
+/* Colors */
+
+body {
+  color: #666666;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: #11a4ce;
+}
+
+
+/*
+ * By page section
+ * /
+
+/* Header */
+
+#zone-branding-wrapper {
+  background: #52bad8; /* Old browsers */
+  background: -moz-linear-gradient(top,  #52bad8 0%, #fcfcfc 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#52bad8), color-stop(100%,#fcfcfc)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #52bad8 0%,#fcfcfc 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #52bad8 0%,#fcfcfc 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #52bad8 0%,#fcfcfc 100%); /* IE10+ */
+  background: linear-gradient(top,  #52bad8 0%,#fcfcfc 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52bad8', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
+}
+
+.logo-img {
+  float: left;
+}
+
+.site-name {
+  display: none;
+}
+
+.site-name-slogan {
+  float: right;
+  margin: 30px 20px 0 0;
+}
+
+h6.site-slogan {
+  color: #fff;
+  font-size: 1.75em;
+}
+
+.sossa-connect {
+  background: #e2f3f8;
+  border: 1px solid #cccccc;
+  border-bottom: none;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px 0px 0px; 
+  float: right;
+  margin: -5.5em 3% 0 0;
+  padding: 1em 1em .5em 1em;
+  text-transform: uppercase;
+  width: 15em;
+}
+
+.sossa-connect img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.sossa-connect .connect-img {
+  margin: 0 .2em 0 0;
+}
+
+.sossa-connect .connect-text {
+  margin: 0 0 0 105px;
+}
+
+
+/* Main menu */
+
+.block-main-menu .block-title {
+  display: none;
+}
+
+.block-main-menu .menu {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  height: 2.5em;
+}
+
+.block-main-menu a,
+.menu-name-main-menu a {
+  color: #666666;
+}
+
+.block-main-menu a.active,
+.block-main-menu a.active-trail,
+.menu-name-main-menu a.active {
+  background: #e1f3f8;
+  color: #11a4ce;
+}
+
+.block-main-menu ul li {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 16.5%;
+}
+
+.block-main-menu li a {
+  border-right: 1px solid #ccc;
+  display: block;
+  margin: 0;
+  padding: .5em 0;
+  width: 100%;
+}
+
+.block-main-menu li.last a {
+  border-right: none;
+}
+
+/* Main submenu */
+
+.block-main-menu li.expanded ul {
+  display: none;
+}
+
+.block-menu-block-1 .block-title {
+  display: none;
+}
+
+.menu-name-main-menu.menu-level-2 ul {
+  background: #e1f3f8;
+  border-bottom: 1px solid #ccc;
+  padding: .5em 0 0 0;
+  height: 2em;
+}
+
+.menu-name-main-menu.menu-level-2 li {
+  float: left;
+  list-style: none;
+  padding: 0 2%;
+  margin: 0;
+  text-align: center;
+}
+
+
+/* Footer */
+
+#zone-footer-wrapper {
+  background: #fcfcfc; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fcfcfc 0%, #52bad8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#52bad8)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #fcfcfc 0%,#52bad8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #fcfcfc 0%,#52bad8 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #fcfcfc 0%,#52bad8 100%); /* IE10+ */
+  background: linear-gradient(top,  #fcfcfc 0%,#52bad8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#52bad8',GradientType=0 ); /* IE6-9 */
+}
+
+/* Footer menu */
+
+.block-menu-footer-menu .block-title {
+  display: none;
+}
+
+.block-menu-footer-menu a {
+  color: #666666;
+}
+
+.block-menu-footer-menu ul li {
+  list-style: none;
+  float: left;
+  margin: 0;
+}
+
+.block-menu-footer-menu ul li a {
+  padding: .75em 1.25em .75em 0;
+}
+
+
+/* Copyright section */
+
+.region-footer-third {
+  border-top: 1px solid #4d4d4d;
+  font-size: .9em;
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
+  text-align: center;
+}
+
+
+/*
+ * Reusable styles
+ */
+
+/* Gray border */
+
+.gray-border-rounded {
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  margin: 0 0 2em 0;
+  padding: 1em 1.5em;
+}
+
+/* Section title block */
+
+.section-title-block {
+  font-size: 1.5em;
+}
+
+.section-title-block .block-title {
+  background: #26acd2;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #bfe6f2;
+  display: inline;
+  font-size: 3em;
+  padding: .25em .5em;
+}
+
+.section-title-block .block-title-wrapper {
+  padding: 20px 0;
+}
+
+.section-title-block.blue .block-title {
+  
+}
