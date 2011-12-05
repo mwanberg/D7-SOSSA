@@ -30,9 +30,12 @@ function mailchimp_sts_admin_page() {
         '!reports' => l(t(' MailChimp STS quotas, statistics, and reports'), 'admin/reports/mailchimp_sts'),
         '!STS' => l(t('MailChimp STS API'), 'http://apidocs.mailchimp.com/sts/1.0/')
       ));
-    $form = drupal_get_form('mailchimp_sts_admin_settings', $emails);
 
-    return $message . drupal_render($form);
+    // return render array.
+    return array(
+      'message' => array('#markup' => $message),
+      'form' => drupal_get_form('mailchimp_sts_admin_settings', $emails)
+    );
   }
   else {
     drupal_set_message(
@@ -96,6 +99,12 @@ function mailchimp_sts_admin_settings($form, &$form_state, $verified_emails = ar
     '#type' => 'submit',
     '#value' => t('Add email'),
     '#submit' => array('mailchimp_sts_admin_new_address_submit'),
+  );
+  $form['email_options']['mailchimp_sts_from_name'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Email from name'),
+    '#default_value' => variable_get('mailchimp_sts_from_name', ''),
+    '#description'   => t('Optionally enter a from name to be used.'),
   );
 
   $formats = filter_formats();
