@@ -1,0 +1,1 @@
+[01-Feb-2012 10:35:03] PHP Fatal error:  Class 'DrupalQueue' not found in /home/sossa/public_html/sites/all/modules/mailchimp/modules/mailchimp_lists/mailchimp_lists.module on line 168

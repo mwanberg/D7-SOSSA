@@ -129,3 +129,8 @@ DirectoryIndex index.php index.html index.htm
     </FilesMatch>
   </IfModule>
 </IfModule>
+
+RewriteCond %{HTTP_HOST} ^ask10\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.ask10\.org$
+RewriteRule ^/?$ "http\:\/\/sossainfo\.org\/ask10" [R=301,L]
+
